@@ -1,0 +1,20 @@
+https://drive.google.com/file/d/1frq9O9wD2W2nVaxZ3Bg-K3VAE5Cxv9vd/view?usp=sharing
+ПОЧАТОК
+  ВВЕСТИ n
+  k ← 0
+
+  ПОКИ n > 0 ВИКОНУВАТИ
+    k ← k + 1
+    n ← n DIV 10
+  ВСЕ
+
+  ВИВЕСТИ k
+КІНЕЦЬ
+
+Крок	n	k	n > 0
+0	70500	0	так
+1	7050	1	так
+2	705	2	так
+3	70	3	так
+4	7	4	так
+5	0	5	ні

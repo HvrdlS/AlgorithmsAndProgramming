@@ -1,0 +1,20 @@
+https://drive.google.com/file/d/1gG_B4uqV6Xs2KefRxwGoH5P2E2MTUBuh/view?usp=sharing
+ПОЧАТОК
+  ВВЕСТИ n
+  s ← 0
+
+  ПОКИ n > 0 ВИКОНУВАТИ
+    digit ← n MOD 10
+    s ← s + digit
+    n ← n DIV 10
+  ВСЕ
+
+  ВИВЕСТИ s
+КІНЕЦЬ
+
+Крок	n	digit	s	n > 0
+0	1234	—	0	так
+1	123	4	4	так
+2	12	3	7	так
+3	1	2	9	так
+4	0	1	10	ні
