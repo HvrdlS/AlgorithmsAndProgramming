@@ -1,0 +1,5 @@
+s = str(input("Enter the text: "))
+print(len(s))
+print(s[0])
+print(s[-1:])
+print(s[::-1])
