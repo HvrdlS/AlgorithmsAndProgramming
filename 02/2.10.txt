@@ -1,0 +1,20 @@
+https://drive.google.com/file/d/1-6apimpV9dB9F9wZQ05CaizDhjeFz3qm/view?usp=sharing
+ПОЧАТОК
+  ВВЕСТИ n
+  s ← 0
+  i ← 1
+
+  ПОКИ i <= n ВИКОНУВАТИ
+    s ← s + 1 / i
+    i ← i + 1
+  ВСЕ
+
+  ВИВЕСТИ s
+КІНЕЦЬ
+
+Крок	i	s	i <= n
+0	1	0	так
+1	2	1	так
+2	3	1.5	так
+3	4	1.8333	так
+4	5	2.0833	ні
