@@ -1,0 +1,21 @@
+https://drive.google.com/file/d/1qhx1o56Qvjdwq_e4r3kmrnYLHw_AuBdD/view?usp=sharing
+ПОЧАТОК
+  ВВЕСТИ n
+  f ← 1
+  i ← 1
+
+  ПОКИ i <= n ВИКОНУВАТИ
+    f ← f * i
+    i ← i + 1
+  ВСЕ
+
+  ВИВЕСТИ f
+КІНЕЦЬ
+
+Крок	i	f	i <= n
+0	1	1	так
+1	2	1	так
+2	3	2	так
+3	4	6	так
+4	5	24	так
+5	6	120	ні
