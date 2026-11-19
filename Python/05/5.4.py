@@ -14,3 +14,12 @@ else:
     elif x < 0 and y < 0:
         print(f"Third quadrant")
     else: print(f"Fourth quadrant")
+
+x, y = 0, 0
+assert x == 0 and y == 0
+x, y = 0, 5
+assert x == 0
+x, y = -3, 0
+assert y == 0
+x, y = -2, -4
+assert x < 0 and y < 0

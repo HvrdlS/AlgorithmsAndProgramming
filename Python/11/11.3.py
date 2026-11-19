@@ -5,19 +5,23 @@ D = []
 E = [7]     
 
 def bubble_sort(a):
+    comparisons = 0
+    swaps = 0
     n = len(a)
-    passes = 0
     for i in range(n - 1):
         swapped = False
-        passes += 1
         for j in range(n - 1 - i):
+            comparisons += 1
             if a[j] > a[j + 1]:
                 a[j], a[j + 1] = a[j + 1], a[j]
+                swaps += 1
                 swapped = True
-        if not swapped:     
+        if not swapped:
             break
-    return a, passes
+    return a, comparisons, swaps
     
 for test in [A, B, C, D, E]:
-    result, passes = bubble_sort(test.copy())
-    print(f"{result}, passes {passes}")
+    result, comparisons, swaps = bubble_sort(test.copy())
+    print(f"{result}, comparisons {comparisons}, swaps {swaps}")
+
+print("Bubble sort repeatedly compares neighboring elements and moves larger elements to the end. In a sorted list it stops early, while quick sort uses a pivot and recursively partitions the remaining elements.")

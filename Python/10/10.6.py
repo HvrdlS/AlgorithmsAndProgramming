@@ -20,10 +20,15 @@ def fib_rec_memo(n):
     """Return the nth Fibonacci number using memoized recursion."""
     if n <= 1:
         return n
-    return fib_rec(n-1)+fib_rec(n-2)
+    return fib_rec_memo(n-1)+fib_rec_memo(n-2)
 
 print(f"iter {fib_iter(n)}, rec(memo) {fib_rec_memo(n)}")
 
-assert fib_rec_memo(5) == fib_iter(5)
-assert fib_rec_memo(15) == fib_iter(15)
-assert fib_rec_memo(35) == fib_iter(35)
+assert fib_iter(0) == 0
+assert fib_iter(5) == 5
+assert fib_iter(15) == 610
+assert fib_iter(35) == 9227465
+assert fib_rec_memo(0) == 0
+assert fib_rec_memo(5) == 5
+assert fib_rec_memo(15) == 610
+assert fib_rec_memo(35) == 9227465

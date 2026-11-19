@@ -15,6 +15,9 @@ def list_sum_iter(a):
 
 print(f"iter {list_sum_iter(a)}, rec {list_sum_rec(a)}")
 
-assert list_sum_rec([]) == list_sum_iter([])
-assert list_sum_rec([5]) == list_sum_iter([5])
-assert list_sum_rec([1, 2, 3, 4]) == list_sum_iter([1, 2, 3, 4])
+assert list_sum_rec([]) == 0
+assert list_sum_rec([5]) == 5
+assert list_sum_rec([1, 2, 3, 4]) == 10
+assert list_sum_iter([]) == 0
+assert list_sum_iter([5]) == 5
+assert list_sum_iter([1, 2, 3, 4]) == 10

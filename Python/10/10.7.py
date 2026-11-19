@@ -15,6 +15,9 @@ def reverse_number_rec(n):
     return (n%10) * (10**(len(str(n))-1)) + reverse_number_rec(n//10)
 print(f"iter {reverse_number_iter(n)}, rec {reverse_number_rec(n)}")
 
-assert reverse_number_iter(0) == reverse_number_rec(0)
-assert reverse_number_iter(895) == reverse_number_rec(895)
-assert reverse_number_iter(100) == reverse_number_rec(100)
+assert reverse_number_iter(0) == 0
+assert reverse_number_iter(895) == 598
+assert reverse_number_iter(100) == 1
+assert reverse_number_rec(0) == 0
+assert reverse_number_rec(895) == 598
+assert reverse_number_rec(100) == 1

@@ -21,6 +21,9 @@ def binary_iter(n):
 
 print(f"iter {binary_iter(n)}, rec {binary_rec(n)}")
 
-assert binary_rec(0) == binary_iter(0)
-assert binary_rec(10) == binary_iter(10)
-assert binary_rec(255) == binary_iter(255)
+assert binary_rec(0) == "0"
+assert binary_rec(10) == "1010"
+assert binary_rec(255) == "11111111"
+assert binary_iter(0) == "0"
+assert binary_iter(10) == "1010"
+assert binary_iter(255) == "11111111"
