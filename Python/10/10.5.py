@@ -14,6 +14,9 @@ def gcd_rec(a,b):
     return gcd_rec(b, a%b)
 print(f"iter {gcd_iter(a,b)}, rec {gcd_rec(a,b)}")
 
-assert gcd_iter(18,6) == gcd_rec(18,6)
-assert gcd_iter(1,1) == gcd_rec(1,1)
-assert gcd_iter(24,4) == gcd_rec(24,4)
+assert gcd_iter(18,6) == 6
+assert gcd_iter(1,1) == 1
+assert gcd_iter(24,4) == 4
+assert gcd_rec(18,6) == 6
+assert gcd_rec(1,1) == 1
+assert gcd_rec(24,4) == 4

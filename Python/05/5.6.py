@@ -7,3 +7,12 @@ elif 64 <= score <= 73: print(f"D")
 elif 60 <= score <= 63: print(f"E")
 elif 35 <= score <= 59: print(f"FX")
 elif score < 35: print(f"F")
+
+score = 90
+assert score >= 90
+score = 82
+assert 82 <= score <= 89
+score = 35
+assert 35 <= score <= 59
+score = -1
+assert score < 0

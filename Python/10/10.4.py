@@ -21,6 +21,9 @@ def power_rec(a, n):
 
 print(f"iter {power_iter(a,n)}, rec {power_rec(a,n)}")
 
-assert power_iter(0, 1) == power_rec(0, 1)
-assert power_iter(5, 2) == power_rec(5, 2)
-assert power_iter(15, 3) == power_rec(15, 3)
+assert power_iter(0, 1) == 0
+assert power_iter(5, 2) == 25
+assert power_iter(15, 3) == 3375
+assert power_rec(0, 1) == 0
+assert power_rec(5, 2) == 25
+assert power_rec(15, 3) == 3375

@@ -6,3 +6,12 @@ elif a < 0:
 else:
     b = "zero"
 print(f"{a} is {b}")
+
+x = 7
+assert (x > 0)
+x = -7
+assert (x < 0)
+x = 0
+assert (x == 0)
+x = -1
+assert (x < 0)

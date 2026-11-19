@@ -18,6 +18,9 @@ def is_palindrome_rec(a):
 
 print(f"iter {is_palindrome_iter(a)}, rec {is_palindrome_rec(a)}")
 
-assert is_palindrome_rec("radar") == is_palindrome_iter("radar")
-assert is_palindrome_rec("platform") == is_palindrome_iter("platform")
-assert is_palindrome_rec("python") == is_palindrome_iter("python")
+assert is_palindrome_rec("radar") is True
+assert is_palindrome_rec("platform") is False
+assert is_palindrome_rec("python") is False
+assert is_palindrome_iter("radar") is True
+assert is_palindrome_iter("platform") is False
+assert is_palindrome_iter("python") is False

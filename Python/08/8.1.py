@@ -1,10 +1,12 @@
 a = list(map(int, input("Input the numbers: ").split()))
-sum = sum(a)
+total = sum(a)
 n = len(a)
-mean = sum/n
-for i in range(n):
-    if i == 0:
-        product = a[i]
-    else:
+if n == 0:
+    mean = 0
+    product = 0
+else:
+    mean = total / n
+    product = 1
+    for i in range(n):
         product *= a[i]
-print(f"sum {sum}, product {product}, n {n}, mean {mean}")
+print(f"sum {total}, product {product}, n {n}, mean {mean}")
