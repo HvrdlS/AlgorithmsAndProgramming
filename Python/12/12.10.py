@@ -1,3 +1,9 @@
+"""Data types: strings and dictionaries.
+Dictionaries count character frequencies with average O(1) updates;
+comparing the two dictionaries and scanning both words takes O(n + m) time
+for words of lengths n and m.
+"""
+
 a = input("First word: ").lower()
 b = input("Second word: ").lower()
 
